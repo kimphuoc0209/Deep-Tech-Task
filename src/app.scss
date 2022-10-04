@@ -1,0 +1,31 @@
+.App {
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user_me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user__vertical {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 46px 0;
+  height: 100%;
+}
+
+.users__horizontal {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: calc(100vw - 40px);
+}

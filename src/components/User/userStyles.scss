@@ -1,0 +1,29 @@
+.user {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #fff;
+  border-radius: 100rem;
+
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100rem;
+    object-fit: cover;
+  }
+}
+
+.info {
+  width: 100%;
+  text-align: center;
+  &__name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+  }
+  &__username {
+    font-size: 14px;
+    font-weight: normal;
+    color: #aaa;
+    font-style: italic;
+  }
+}

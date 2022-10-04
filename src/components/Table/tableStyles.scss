@@ -1,0 +1,54 @@
+.table {
+  margin-top: 12px;
+  width: 800px;
+  height: 400px;
+  background-image: linear-gradient(45deg, green, black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 200px rgba(0, 189, 252, 0.4);
+  &__title {
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+
+.table {
+  position: relative;
+
+  &__img-card {
+    height: 60px;
+    .img-left,
+    .img-center,
+    .img-right {
+      height: 100%;
+    }
+    .img-left {
+      transform: translateX(30px) rotate(-45deg);
+    }
+    .img-center {
+      transform: rotate(0);
+      z-index: 1;
+    }
+    .img-right {
+      transform: translateX(-30px) rotate(45deg);
+    }
+    &.top {
+      position: absolute;
+      top: 10px;
+      transform: rotate(180deg);
+    }
+    &.left {
+      position: absolute;
+      left: 40px;
+      transform: rotate(90deg);
+    }
+    &.right {
+      position: absolute;
+      right: 40px;
+      transform: rotate(-90deg);
+    }
+  }
+}
