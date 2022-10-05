@@ -2,6 +2,7 @@
   position: fixed;
   left: 20px;
   top: 50%;
+  z-index: 1000;
   transform: translateY(-50%);
   &__deck {
     display: block;
@@ -29,7 +30,25 @@
         border-radius: 6px;
         background-image: linear-gradient(to right, green, rgba(0, 0, 0, 0.9));
         cursor: pointer;
+        transition: all 0.1s linear;
+
+        &:hover {
+          transform: scale(1.1);
+          transition: all 0.1s linear;
+        }
       }
     }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .settings {
+    top: 12%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .settings {
+    top: 86%;
   }
 }

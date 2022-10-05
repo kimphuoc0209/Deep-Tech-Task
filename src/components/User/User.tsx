@@ -6,8 +6,8 @@ const User: React.FC = () => {
     <div className="user">
       <img src="/assets/images/user_img.jpg" alt="" />
       <div className="info">
-        <div className="info__name">User 1</div>
-        <div className="info__username">Conianguys</div>
+        <div className="info__name">User</div>
+        <div className="info__username">Bio</div>
       </div>
     </div>
   );
